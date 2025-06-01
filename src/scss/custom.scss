@@ -1,0 +1,7 @@
+
+$p-primary: #1DD399;
+
+
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+    $primary:   $p-primary,
+);

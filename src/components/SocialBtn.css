@@ -1,0 +1,8 @@
+.social-btn{
+    width:35px;
+    transition: transform 0.5s ease;
+}
+
+.social-btn:hover{
+    transform: scale(1.25);
+}
