@@ -4,10 +4,12 @@ import {logos} from '../assets/images'
 
 
 
-function SocialBtn({link = "#", icon = logos.emailLogo}) {
+function SocialBtn({link = "#", icon = logos.emailLogo, color = ""}) {
     return(
-        <a class="btn btn-link" href={link} target="_blank" rel="noopener noreferrer">
-            <img class="social-btn" src={icon}></img>
+        <a class="btn btn-link px-0 py-0" href={link} target="_blank" rel="noopener noreferrer">
+            <div class="social-btn" style={{color}}>
+                {icon}
+            </div>
         </a>
 
     )

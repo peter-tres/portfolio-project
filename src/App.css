@@ -1,1 +1,29 @@
+.background{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
 
+
+.background::before{
+    content: "";
+
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+
+    background: url('./assets/background.png') center/cover no-repeat;
+    
+    mask-image: linear-gradient(to right,rgb(0 0 0 / 100%), transparent);    
+    
+    filter: blur(5px);
+    z-index: -1;
+
+}
+
+.border-thickness{
+    border-top-width: 2px;
+}
+
+main{
+    padding: 0px 75px 0px 75px;
+}
