@@ -14,11 +14,12 @@ function App() {
   return (
     <>
     <PNav/>
-    <main class="vh-100 background">
+    <main className="vh-100 background">
       <Intro/>
-      <hr class="w-75 mx-auto border-thickness"></hr>
+      <hr className="mx-auto border-thickness"></hr>
       <ProjectsDisplay/>
-      <hr class="w-75 mx-auto border-thickness"></hr>
+      <hr className="mx-auto border-thickness"></hr>
+      <ProjectsDisplay/>
       </main>
       <PFooter/>
     </>

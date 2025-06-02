@@ -6,8 +6,8 @@ import {logos} from '../assets/images'
 
 function PFooter(){
     return(
-        <div class="footer">
-            <div class="container-fluid d-flex justify-content-center gap-4 py-3">
+        <div className="footer">
+            <div className="container-fluid d-flex justify-content-center gap-4 py-3">
                 <SocialBtn
                 link="https://bsky.app/profile/petertres.bsky.social"
                 icon={logos.bskyLogo}/>
