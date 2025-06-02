@@ -14,10 +14,10 @@ function App() {
   return (
     <>
     <PNav/>
-    <main className="vh-100 background">
+    <main className="min-vh-100 background">
       <Intro/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay/>
+      <ProjectsDisplay response_array={["test","test2", "test3"]}/>
       <hr className="mx-auto border-thickness"></hr>
       <ProjectsDisplay/>
       </main>

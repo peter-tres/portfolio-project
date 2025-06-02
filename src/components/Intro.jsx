@@ -37,7 +37,7 @@ function Intro(){
                         link="https://github.com/peter-tres"
                         icon={logos.githubLogo}/>
                         <SocialBtn
-                        link="https://google.com"
+                        link="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=motap95@gmail.com"
                         icon={logos.emailLogo}
                         color="#1DD399"/>
                     </div>
