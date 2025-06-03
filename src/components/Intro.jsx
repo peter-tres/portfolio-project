@@ -19,6 +19,7 @@ function Intro(){
                 <div className="intro-blurb w-50">
                 <p>I’m <b>Peter M.</b> I’m a developer driven by creating memorable and interactive experiences— and by the systems working behind the curtain to make them possible.</p>
                 <p>This passion for user immersion fuels me in both <b>game development</b> and <b>software development</b>.</p>
+                <p>Below you will find some of my personal projects.</p>
                 </div>
             </div>
             <div className="row justify-content-center pt-5">
