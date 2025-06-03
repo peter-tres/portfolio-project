@@ -1,0 +1,41 @@
+{
+  "showcases": [
+    {
+      "title": "MIDI Tool (2025)",
+      "image": "",
+      "info": [
+        {
+          "title": "Github Repo",
+          "summary": "https://github.com/peter-tres/miditool",
+          "link": true
+        },
+        {
+          "title": "What I did",
+          "summary": "I noticed adding songs manually was time-consuming and prone to errors, so I created a Python script to automate generating note queues for my rhythm piano game. This made it easier to add new songs and sped up development. It reduces manual work and streamlines testing.",
+          "link": false
+        },
+        {
+          "title": "Tools",
+          "summary": "Python",
+          "link": false
+        }
+      ]
+    },
+    {
+      "title": "SpriteSplitter (2025)",
+      "image": "character-creation.png",
+      "info": [
+        {
+          "title": "What I did",
+          "summary": "I wanted to draw full characters as a single image but automatically export their body parts as separate images. Using my art program’s API and the Pillow library in Python, I built a tool that extracts these parts so I can combine them modularly in-game, allowing flexible character creation while preserving traditional animation.",
+          "link": false
+        },
+        {
+          "title": "Tools",
+          "summary": "Python, Pillow, Art Program API",
+          "link": false
+        }
+      ]
+    }
+  ]
+}
