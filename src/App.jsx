@@ -6,8 +6,8 @@ import PNav from './components/PNav'
 import PFooter from './components/PFooter';
 import Intro from './components/Intro';
 import ProjectsDisplay from './components/ProjectsDisplay'
-
-
+import GamesData from './assets/game_showcases.json'
+import SoftwareData from './assets/software_showcases.json'
 function App() {
 
 
@@ -20,9 +20,9 @@ function App() {
     <main className="background">
       <Intro/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay title="Games" json="game_showcases.json"/>
+      <ProjectsDisplay title="Games" json={GamesData}/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay title="Software Projects" json="software_showcases.json"/>
+      <ProjectsDisplay title="Software Projects" json={SoftwareData}/>
       </main>
       <PFooter/>
     </>
