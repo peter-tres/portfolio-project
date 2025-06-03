@@ -24,9 +24,9 @@ function generateCards(card_datas){
 function ProjectsDisplay({title = "Title", json=""}){
     const [showcases, setShowcases] = useState([]);
 
-    let json_name = '/' + json;
+    let json_path = import.meta.env.BASE_URL + json;
     useEffect(()=>{
-    fetch(json_name)
+    fetch(json_path)
     .then(response => response.json())
     .then(json => setShowcases(json.showcases))
     .catch(error => console.error('Error fetching JSON'))
