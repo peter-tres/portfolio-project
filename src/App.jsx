@@ -9,6 +9,11 @@ import ProjectsDisplay from './components/ProjectsDisplay'
 
 
 
+const display = {
+  title: "placeholder",
+
+}
+
 function App() {
 
   return (
@@ -17,7 +22,7 @@ function App() {
     <main className="min-vh-100 background">
       <Intro/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay response_array={["test","test2", "test3"]}/>
+      <ProjectsDisplay/>
       <hr className="mx-auto border-thickness"></hr>
       <ProjectsDisplay/>
       </main>
