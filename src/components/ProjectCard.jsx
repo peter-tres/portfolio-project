@@ -5,7 +5,7 @@ import { useId } from 'react';
 function InfoRow( {title = "Placeholder", text="Placeholder"}){
     return(
         <div className="row pb-4">
-            <h4 className="fst-italic fs-5">{title}</h4>
+            <h4 className="fst-italic fs-5 fw-light">{title}</h4>
             <p>{text}</p>
         </div>
     );
@@ -29,7 +29,7 @@ function generateRows(rows){
 function ProjectCard({title="Placeholder Title", info=[], image=""}){
     return(
         <div className="container">
-        <h3 className="mb-4">{title}</h3>
+        <h3 className="mb-4 fw-light">{title}</h3>
         <img src={"/src/assets/" + image} className="card mb-4"></img>
         
         {generateRows(info)}
