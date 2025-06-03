@@ -4,8 +4,11 @@
 
 
 .intro-blurb{
-    width: 65%;
+    min-width: 70%;
 }
+
+
+
 
 .josefin{
   font-family: "Josefin Slab", serif;

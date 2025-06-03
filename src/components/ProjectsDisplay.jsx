@@ -3,7 +3,7 @@ import './ProjectsDisplay.css'
 import ProjectCard from './ProjectCard';
 
 const CardContainer = ({title="cardname", info=[], image=""}) =>(
-        <div className="px-0 col-12 col-md-12 col-lg-6">
+        <div className="col-12 col-md-12 col-lg-6">
         <ProjectCard title={title} info={info} image={image}/>
     </div> 
 )

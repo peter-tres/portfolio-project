@@ -6,12 +6,12 @@ function InfoRow( {title = "Placeholder", text="Placeholder", is_link=false}){
     let ele = null
 
     if (is_link){
-        ele =   <div className="row pb-4">
+        ele =   <div className="row pb-1">
                 <h4 className="fst-italic fs-5 fw-light"><a className="text-danger" href={text}><span className="fst-normal">{title}</span></a></h4>
                 </div>
     }
     else{
-        ele =   <div className="row pb-4">
+        ele =   <div className="row pb-1">
                 <h4 className="fst-italic fs-5 fw-light">{title}</h4>
                 <p>{text}</p>
                 </div>
@@ -39,9 +39,10 @@ function generateRows(rows){
 
 function ProjectCard({title="Placeholder Title", info=[], image=""}){
     return(
-        <div className="container">
+        <div className="container px-0">
         <h3 className="mb-4 fw-light">{title}</h3>
-        <img src={"/src/assets/" + image} className="card mb-4"></img>
+        {image?<img src={"/src/assets/" + image} className="card mb-4"></img>:<></>}
+
         
         {generateRows(info)}
 

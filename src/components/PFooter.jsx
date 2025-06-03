@@ -8,8 +8,10 @@ function PFooter(){
     return(
         <div className="footer pb-4">
             <div className="row w-100">
-                <div className="col d-flex align-items-end justify-content-center">
-                    <small>© 2025 Peter M</small>
+                <div className="col d-flex align-items-end">
+                    <div className="container-fluid d-flex justify-content-center gap-4 pt-4">
+                        <small>© 2025 Peter M</small>
+                    </div>
                 </div>
                 <div className="col">
                     <div className="container-fluid d-flex justify-content-center gap-4 pt-4">

@@ -17,12 +17,12 @@ function App() {
   return (
     <>
     <PNav/>
-    <main className="min-vh-100 background">
+    <main className="background">
       <Intro/>
       <hr className="mx-auto border-thickness"></hr>
       <ProjectsDisplay title="Games" json="game_showcases.json"/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay title="Software Projects" json="game_showcases.json"/>
+      <ProjectsDisplay title="Software Projects" json="software_showcases.json"/>
       </main>
       <PFooter/>
     </>
