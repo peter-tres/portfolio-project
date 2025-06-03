@@ -1,18 +1,18 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react';
 import './ProjectsDisplay.css'
 import ProjectCard from './ProjectCard';
 
-const CardContainer = ({title="cardname"}) =>(
+const CardContainer = ({title="cardname", info=[], image=""}) =>(
         <div className="col-12 col-md-12 col-lg-6">
-        <ProjectCard title={title}/>
+        <ProjectCard title={title} info={info} image={image}/>
     </div> 
 )
 
 function generateCards(card_datas){
     let cards = [];
     for (const r of card_datas){
-        const {title} = r
-        cards.push(<CardContainer title={title}/>)
+        const {title,info,image} = r
+        cards.push(<CardContainer key={title} title={title} info={info} image={image}/>)
     }
 
     return(
@@ -21,10 +21,20 @@ function generateCards(card_datas){
 }
 
 
-function ProjectsDisplay({display_title = "Title", showcases = []}){
+function ProjectsDisplay({title = "Title"}){
+    const [showcases, setShowcases] = useState([]);
+
+    useEffect(()=>{
+    fetch('/game_showcases.json')
+    .then(response => response.json())
+    .then(json => setShowcases(json.showcases))
+    .catch(error => console.error('Error fetching JSON'))
+    }, [])
+
+
     return(
         <div className="container py-5">
-            <h2 className="text-uppercase">{display_title} - Displaying: {showcases.length} cards</h2>
+            <h2 className="text-uppercase">{title}</h2>
             <div className="row py-4">
                 
                 {generateCards(showcases)}
