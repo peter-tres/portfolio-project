@@ -41,7 +41,7 @@ function ProjectCard({title="Placeholder Title", info=[], image=""}){
     return(
         <div className="container px-0">
         <h3 className="mb-4 fw-light">{title}</h3>
-        {image?<img src={"/src/assets/" + image} className="card mb-4"></img>:<></>}
+        {image?<img src={"/" + image} className="card mb-4"></img>:<></>}
 
         
         {generateRows(info)}
