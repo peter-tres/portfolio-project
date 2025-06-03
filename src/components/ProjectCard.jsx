@@ -6,14 +6,14 @@ function InfoRow( {title = "Placeholder", text="Placeholder", is_link=false}){
     let ele = null
 
     if (is_link){
-        ele =   <div className="row pb-1">
+        ele =   <div className="row pb-4">
                 <h4 className="fst-italic fs-5 fw-light"><a className="text-danger" href={text}><span className="fst-normal">{title}</span></a></h4>
                 </div>
     }
     else{
-        ele =   <div className="row pb-1">
-                <h4 className="fst-italic fs-5 fw-light">{title}</h4>
-                <p>{text}</p>
+        ele =   <div className="row pb-4">
+                <h4 className="fst-italic fs-5 fw-light ">{title}</h4>
+                <p className="lh-lg">{text}</p>
                 </div>
     }
 
