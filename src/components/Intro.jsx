@@ -13,7 +13,7 @@ function Intro(){
             <h1 className="text-center text-uppercase fw-bold p-title">Games<span className="text-primary"> & </span>Software Developer</h1>
             </div>
             <div className="row my-0">
-            <h2 className="text-center fs-6 fw-light fst-italic">Crafting experiences across platforms, bringing ideas to life</h2>
+            <h2 className="text-center fs-6 fst-italic josefin fw-light">Crafting experiences across platforms, bringing ideas to life</h2>
             </div>
             <div className="row justify-content-center pt-5">
                 <div className="intro-blurb">

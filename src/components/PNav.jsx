@@ -12,10 +12,10 @@ function PNav(){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav w-100 d-flex justify-content-end gap-2">
                 <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">Games</a>
+                <a className="nav-link" aria-current="page" href="#Games">Games</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Software Projects</a>
+                <a className="nav-link" href="#Software Projects">Software Projects</a>
                 </li>
             </ul>
             </div>

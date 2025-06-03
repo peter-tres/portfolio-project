@@ -1,20 +1,19 @@
 #root{
     color: #36404E;
     background-color: #F1F1F1;
+    font-family: "Robot", sans-serif;
 }
 
-p{
-    color:#5B6F77;
-}
 
 h2{
-    color: #36404E  
-}
-
-h3{
-    color:#5B6F77;;
+    color:#36404E  
 }
 
 small{
     color:#5B6F77;
 }
+
+p, h3, h4{
+    color:#546274  
+}
+

@@ -20,7 +20,9 @@ function App() {
     <main className="min-vh-100 background">
       <Intro/>
       <hr className="mx-auto border-thickness"></hr>
-      <ProjectsDisplay title="Games"/>
+      <ProjectsDisplay title="Games" json="game_showcases.json"/>
+      <hr className="mx-auto border-thickness"></hr>
+      <ProjectsDisplay title="Software Projects" json="game_showcases.json"/>
       </main>
       <PFooter/>
     </>

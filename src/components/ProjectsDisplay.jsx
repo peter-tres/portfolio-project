@@ -21,11 +21,12 @@ function generateCards(card_datas){
 }
 
 
-function ProjectsDisplay({title = "Title"}){
+function ProjectsDisplay({title = "Title", json=""}){
     const [showcases, setShowcases] = useState([]);
 
+    let json_name = '/' + json;
     useEffect(()=>{
-    fetch('/game_showcases.json')
+    fetch(json_name)
     .then(response => response.json())
     .then(json => setShowcases(json.showcases))
     .catch(error => console.error('Error fetching JSON'))
@@ -34,7 +35,7 @@ function ProjectsDisplay({title = "Title"}){
 
     return(
         <div className="container py-5">
-            <h2 className="text-uppercase">{title}</h2>
+            <h2 id={title}className="text-uppercase">{title}</h2>
             <div className="row py-4">
                 
                 {generateCards(showcases)}
