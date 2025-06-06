@@ -28,7 +28,7 @@ function ProjectsDisplay({title = "Title", json=null}){
     return(
         <div className="container py-5">
             <h2 id={title}className="text-uppercase">{title}</h2>
-            <div className="row py-4">
+            <div className="row py-4 gx-5">
                 
                 {generateCards(showcases)}
 
