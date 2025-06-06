@@ -5,6 +5,11 @@
       "image": "chico-preview.png",
       "info": [
         {
+          "title": "Preview",
+          "summary": "https://youtu.be/dQT3IjM0D4s",
+          "link": true
+        },
+        {
           "title": "What I did",
           "summary": "Developed a strategy game inspired by Pikmin featuring a character creator, advanced pathfinding, and a responsive UI built with object-oriented design principles. Implemented queue systems and asynchronous operations to optimize performance for handling numerous actors, integrated custom visual shaders, and utilized external physics libraries to enhance gameplay realism and efficiency.",
           "link": false
