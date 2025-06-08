@@ -29,3 +29,8 @@ main{
     /* padding-left: 75px;
     padding-right: 75px; */
 }
+
+hr{
+    border: none;
+    border-top: 1px dotted #36404E;
+}
