@@ -1,8 +1,16 @@
-.navbar{
-    background-color: #ECECEC !important;
+.scroll-bg{
+    background-color: #ececec !important;
+    transition: background-color 0.4s ease;
 }
+
+.transparent-bg{
+    background-color: transparent !important;
+    transition: background-color 0.4s ease;
+}
+
+
+
 
 .nav-link:hover{
     color: #1DD399;
-
 }
