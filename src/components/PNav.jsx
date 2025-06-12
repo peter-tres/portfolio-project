@@ -13,7 +13,6 @@ function PNav(){
         const onScroll = () => {
             const isScrolled = window.scrollY > 50.0
             setScrolled(isScrolled);
-            console.log(isScrolled);
             
         };
 
