@@ -7,7 +7,7 @@ import {logos} from '../assets/images'
 function PFooter(){
     return(
         <div className="footer pb-4">
-            <div className="row w-100">
+            <div className="row w-100 border-top border-gradient">
                 <div className="col d-flex align-items-end">
                     <div className="container-fluid d-flex justify-content-center gap-4 pt-4">
                         <small>© 2025 Peter M</small>
