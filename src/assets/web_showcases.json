@@ -1,0 +1,30 @@
+{
+  "showcases": [
+    {
+      "title": "Flashcards App (2025)",
+      "image": "flashcards.png",
+      "info": [
+        {
+          "title": "Live Demo",
+          "summary": "https://peter-tres.github.io/flashcards-project/",
+          "link": true
+        },
+        {
+          "title": "Github Repo",
+          "summary": "https://github.com/peter-tres/flashcards-project",
+          "link": true
+        },
+        {
+          "title": "What I did",
+          "summary": "Built a responsive flashcards web app where users can create, edit, and study card sets. I designed the interface, handled state logic with React, and implemented localStorage support for data persistence. This project sharpened my frontend skills and UI design intuition.",
+          "link": false
+        },
+        {
+          "title": "Tools",
+          "summary": "React, JavaScript, HTML, CSS",
+          "link": false
+        }
+      ]
+    }
+  ]
+}
