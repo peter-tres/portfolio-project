@@ -1,7 +1,7 @@
 import React from 'react';
 import {useEffect, useState} from 'react'
 import './PNav.css'
-
+import { Link } from 'react-router';
 
 function PNav({items}){
 
@@ -32,7 +32,10 @@ function PNav({items}){
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav w-100 d-flex justify-content-end gap-2">
-                { items.map( item => 
+                <li className="nav-item">
+                <Link to='/' className="nav-link">Home</Link>
+                </li>
+                { items && items.map( item => 
                     <li className="nav-item" key={item}>
                     <a className="nav-link" aria-current="page" href={`#${item}`}>{item}</a>
                     </li>
